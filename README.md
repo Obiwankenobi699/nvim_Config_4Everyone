@@ -1,28 +1,35 @@
-# Neovim Config 4 Everyone
+# 🛠 Neovim Config 4 Everyone
 
-This is my personal **Neovim configuration** — designed to be easy to set up, beginner-friendly, and ready for coding in multiple languages.
-
----
-
-## 📸 Preview
-![Neovim Screenshot](image.png)
+A minimal yet powerful **Neovim configuration** tailored for **Windows** users, with features for beginners and power users alike.  
+This setup includes sensible defaults, keybindings for faster navigation, and optional mouse support.
 
 ---
 
-## 🚀 Features
-- **Pre-installed Plugins** for productivity and coding
-- **LSP Support** for modern languages
-- **Treesitter** syntax highlighting
-- **Auto-completion** via nvim-cmp
-- **File Explorer** with nvim-tree
-- **Statusline** with lualine
-- **Git Integration**
-- **Python / Jupyter / Magma** support
+## 📌 Features
+
+- 🚀 **Fast startup** — Optimized for performance.
+- 🎨 **Tokyonight Theme** with transparent background (optional).
+- 🔢 **Relative + Absolute line numbers** for quick navigation.
+- 🖱 **Mouse mode toggle** — work with or without mouse.
+- ⌨ **Custom keybindings** for speed & productivity.
+- 🧹 Removed `~` from empty lines for cleaner look.
+- 📂 File explorer (nvim-tree).
+- 🔍 Telescope fuzzy finder.
+- 📜 Total lines counter.
+
+---
+
+## 📦 Requirements
+
+- [Neovim](https://neovim.io/) **v0.8+**
+- [Git](https://git-scm.com/)
+- A [Nerd Font](https://www.nerdfonts.com/) installed
+- Windows Terminal / Kitty / Alacritty (for transparency)
 
 ---
 
 ## 📥 Installation
 
-### 1️⃣ Backup your current config (optional)
-```powershell
-mv $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim_backup
+1. **Clone this repo**
+   ```powershell
+   git clone https://github.com/Obiwankenobi699/nvim_Config_4Everyone.git $env:LOCALAPPDATA\nvim
