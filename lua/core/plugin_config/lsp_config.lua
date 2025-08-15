@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- Mason setup
 require("mason").setup()
 
@@ -15,6 +16,14 @@ if not luasnip_status_ok then return end
 -- Load friendly-snippets
 require("luasnip.loaders.from_vscode").lazy_load()
 
+=======
+require("mason").setup()
+
+require("mason-lspconfig").setup({
+    ensure_installed = { "lua_ls" },
+})
+
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
 -- Function for LSP keybindings
 local on_attach = function(_, _)
     local opts = { buffer = 0 }
@@ -26,6 +35,7 @@ local on_attach = function(_, _)
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
 end
 
+<<<<<<< HEAD
 -- LSP setup
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
@@ -35,10 +45,21 @@ require("lspconfig").lua_ls.setup({
     settings = {
         Lua = {
             diagnostics = { globals = { "vim" } },
+=======
+-- Lua LSP setup
+require("lspconfig").lua_ls.setup({
+    on_attach = on_attach,
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { "vim" },
+            },
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
             workspace = {
                 library = vim.api.nvim_get_runtime_file("", true),
                 checkThirdParty = false,
             },
+<<<<<<< HEAD
             telemetry = { enable = false },
         },
     },
@@ -104,3 +125,11 @@ cmp.setup.cmdline(":", {
         { name = "cmdline" }
     })
 })
+=======
+            telemetry = {
+                enable = false,
+            },
+        },
+    },
+})
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9

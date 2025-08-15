@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- Leader keys
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -55,3 +56,23 @@ map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 map("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
 map("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 map("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
+=======
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
+vim.opt.backspace = '2'
+vim.opt.showcmd = true
+vim.opt.laststatus = 2
+vim.opt.autowrite = true
+vim.opt.cursorline = true
+vim.opt.autoread = true
+
+-- use spaces for tabs and whatnot
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.shiftround = true
+vim.opt.expandtab = true
+
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9

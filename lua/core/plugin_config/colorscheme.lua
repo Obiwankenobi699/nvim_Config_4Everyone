@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require("tokyonight").setup({
   style = "night", -- or "storm", "moon", "day"
   transparent = true, -- removes background
@@ -8,3 +9,7 @@ require("tokyonight").setup({
 })
 
 vim.cmd[[colorscheme tokyonight]]
+=======
+vim.o.termguicolors = true
+vim.cmd [[colorscheme gruvbox]]
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9

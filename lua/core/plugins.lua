@@ -31,10 +31,15 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"
   use "nvim-lua/popup.nvim"
 
+<<<<<<< HEAD
    -- Theme
    use "folke/tokyonight.nvim"
 
 
+=======
+  -- Theme
+  use "ellisonleao/gruvbox.nvim"
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
 
   -- Treesitter
   use {
@@ -42,6 +47,7 @@ return packer.startup(function(use)
     run = ":TSUpdate"
   }
 
+<<<<<<< HEAD
   use {
   "folke/which-key.nvim",
   config = function()
@@ -50,11 +56,17 @@ return packer.startup(function(use)
 }
 
 
+=======
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
   -- File Explorer
   use "nvim-tree/nvim-tree.lua"
   use "nvim-tree/nvim-web-devicons"
 
+<<<<<<< HEAD
   -- Mason for LSP/DAP/Linters
+=======
+  -- ✅ Mason for LSP/DAP/Linters
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
@@ -63,6 +75,7 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"
   use "andweeb/presence.nvim"
 
+<<<<<<< HEAD
   -- Autocompletion
 use "hrsh7th/nvim-cmp"
 use "hrsh7th/cmp-nvim-lsp"
@@ -74,6 +87,8 @@ use "saadparwaiz1/cmp_luasnip"
 use "rafamadriz/friendly-snippets"
 
 
+=======
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
   -- Telescope (Fuzzy finder)
   use {
     "nvim-telescope/telescope.nvim",
@@ -81,6 +96,7 @@ use "rafamadriz/friendly-snippets"
     requires = { { "nvim-lua/plenary.nvim" } }
   }
 
+<<<<<<< HEAD
   -- Jupyter / Notebook-like cells
   use {
     "dccsillag/magma-nvim",
@@ -106,6 +122,18 @@ use "rafamadriz/friendly-snippets"
       "saadparwaiz1/cmp_luasnip",
     }
   }
+=======
+ -- 🧪 Jupyter / Notebook-like cells
+use {
+  "dccsillag/magma-nvim",
+  run = ":UpdateRemotePlugins",
+  config = function()
+    vim.g.magma_automatically_open_output = false
+    vim.g.magma_image_provider = "ueberzug"
+  end
+}
+
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
 
   -- Sync plugins after cloning packer
   if PACKER_BOOTSTRAP then

@@ -74,6 +74,7 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+<<<<<<< HEAD
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\mukul\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
@@ -108,6 +109,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\mukul\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+=======
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\mukul\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -130,11 +137,14 @@ _G.packer_plugins = {
     path = "C:\\Users\\mukul\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+<<<<<<< HEAD
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\mukul\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+=======
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "C:\\Users\\mukul\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
@@ -179,11 +189,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\mukul\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+<<<<<<< HEAD
   },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "C:\\Users\\mukul\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+=======
+>>>>>>> 1b44ee9e33edb383169cd84f99bad9a08c5cd6f9
   }
 }
 
